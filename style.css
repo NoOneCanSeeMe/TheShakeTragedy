@@ -70,8 +70,9 @@ header img {
   color: #c6bba7;
 }
 
-@media (min-width: 95rem) {
+@media (min-width: 75rem) {
   .cocktail-list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
