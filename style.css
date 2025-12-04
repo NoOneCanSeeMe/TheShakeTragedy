@@ -1,0 +1,123 @@
+html,
+body {
+  background-color: #5a0f19;
+  color: #fff8ee;
+  font-family: "Zin Display Extended Bold";
+  min-height: 100%;
+  margin: 0;
+}
+
+header {
+  background-color: #110f0a;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+main {
+  min-height: 100%;
+  flex: 1;
+}
+
+footer {
+  background-color: #0d0c11;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  color: #c89632;
+  flex-shrink: 0;
+}
+
+.cocktail-list {
+  display: flex;
+  flex-direction: column; /* Karten untereinander anordnen */
+  justify-content: center; /* Vertikal zentrieren */
+  align-items: center; /* Horizontal zentrieren */
+  min-height: calc(100vh - 180px);
+  justify-items: center;
+
+  padding: 2rem 1rem;
+  gap: 2rem 1rem;
+}
+
+.cocktail-card {
+  background: #1a171e;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  border: 1px solid #f2e4c9;
+  padding: 1rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  gap: 2rem;
+
+  width: 100%;
+  min-width: 100px;
+  max-width: 300px;
+
+  height: 100%;
+  min-height: 50px;
+  max-height: 350px;
+}
+
+.cocktail-image {
+  width: 100%;
+  max-width: 260px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #110f0a;
+}
+
+.cocktail-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.cocktail-content {
+  width: 100%;
+}
+
+.cocktail-title {
+  margin: 0.4rem 0 0.4rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #d9a441;
+}
+
+.cocktail-description {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #c6bba7;
+}
+
+@media (min-width: 750px) {
+  .cocktail-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 2rem;
+    gap: 4rem 2rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .cocktail-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1550px) {
+  .cocktail-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 2000px) {
+  .cocktail-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
